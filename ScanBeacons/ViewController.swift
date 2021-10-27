@@ -36,8 +36,6 @@ class ViewController: NSViewController, WKNavigationDelegate {
     override func viewDidAppear() {
         super.viewDidAppear()
         
-        print(">> viewDidAppear()")
-        
         if firstTime {
             firstTime = false
             print(">> FirstTime")
@@ -135,10 +133,9 @@ class ViewController: NSViewController, WKNavigationDelegate {
     func updateTable() {
         if webViewIsReady == false { return }
         
-        
-        print("> bids: \(beaconIDs)")
-        print("> beacons: \(beacons)")
-        print("> \(CurrentTimeString())\n")
+//        print("> bids: \(beaconIDs)")
+//        print("> beacons: \(beacons)")
+//        print("> \(CurrentTimeString())\n")
         
         let array = beaconArray()
         guard let json = JsonString(from: array) else { return }
