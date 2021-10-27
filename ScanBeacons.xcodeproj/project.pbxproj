@@ -287,12 +287,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZQQXZWEJB5;
 				INFOPLIST_FILE = ScanBeacons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.riddleling.app.ScanBeacons;
+				PRODUCT_BUNDLE_IDENTIFIER = site.riddleling.app.scanbeacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -307,12 +308,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZQQXZWEJB5;
 				INFOPLIST_FILE = ScanBeacons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.riddleling.app.ScanBeacons;
+				PRODUCT_BUNDLE_IDENTIFIER = site.riddleling.app.scanbeacons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
