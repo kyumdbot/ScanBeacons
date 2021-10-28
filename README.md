@@ -8,7 +8,7 @@
 
 ## Advertisement Data (*kCBAdvDataManufacturerData*) Format
 
-![Manufacturer Data Format](imgs/manufacturer_data_format.png)
+![Manufacturer Data Format](imgs/kCBAdvDataManufacturerData_format.png)
 
 - Company ID: Apple's Bluetooth SIG registered company code.
 - Type: Apple's iBeacon type of Custom Manufacturer Data.
