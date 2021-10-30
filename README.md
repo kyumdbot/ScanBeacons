@@ -14,9 +14,9 @@
 - Type: Apple's iBeacon type of Custom Manufacturer Data.
 - Data Length: ProximityUUID + Major + Minor + MeasuredPower.
 - Proximity UUID: 16 Bytes String.
-- Major: Integer value, 16-bit Big Endian.
-- Minor: Integer value, 16-bit Big Endian.
-- Measured Power: 8 bit Signed value.
+- Major: Unsigned Integer value, 16-bit Big Endian.
+- Minor: Unsigned Integer value, 16-bit Big Endian.
+- Measured Power: 8-bit Signed value.
 
 
 <br>

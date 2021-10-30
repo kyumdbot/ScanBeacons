@@ -16,7 +16,7 @@ struct BeaconInfo {
     let proximityUUID : String
     let major : UInt16
     let minor : UInt16
-    let measuredPower : UInt8
+    let measuredPower : Int8
 }
 
 
@@ -114,7 +114,7 @@ class BLEScanner: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
         let proximityUUID = data[4..<20].to_uuid()
         let major = data[20..<22].to_uint16().bigEndian
         let minor = data[22..<24].to_uint16().bigEndian
-        let measuredPower = data[24..<25].to_uint8()
+        let measuredPower = data[24..<25].to_int8()
         
 //        print("Company ID: \(String(format:"%04X", companyID))")
 //        print("Type: \(String(format:"%2X", type))")
@@ -170,6 +170,11 @@ class BLEScanner: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
 extension Data {
     func hexString() -> String {
         return self.map { String(format:"%02x", $0) }.joined().uppercased()
+    }
+    
+    func to_int8() -> Int8 {
+        let value = self.withUnsafeBytes { $0.load(as: Int8.self) }
+        return value
     }
     
     func to_uint8() -> UInt8 {
